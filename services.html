@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gazellian</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script>
+        function confirmLogout() {
+            // Display a confirmation dialog
+            var logout = confirm("Are you sure you want to log out?");
+            
+            // If user clicks OK, proceed with log-out
+            if (logout) {
+                window.location.href = "index.html"; 
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#"><img src="logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="homepage.html" target ="_self">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" target ="_self">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html" target ="_self" >Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html" target ="_self" >Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" onclick="confirmLogout()" target ="_self" >Log-out</a>
+                </li>
+            </ul>
+
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
+        </div>
+    </nav>
+
+    <section id="services" >
+        <div class="container text-center">
+            <h1 class="title">WHAT WE DO?</h1>
+            <div class="row text-center">
+                <div class="col-md-4 services">
+                    <img src="8.png" class="service-img">
+                    <h4>Customer Support</h4>
+                    <h6>Offer responsive customer support through various channels like live chat, email, or phone to assist with inquiries, orders, and concerns.</h6>
+                </div>
+               <div class="col-md-4 services">
+                    <img src="6.png" class="service-img">
+                    <h4>DELIVERY</h4>
+                    <h6>Provide options for customers to have flowers delivered on the same day or the next day, ensuring freshness and convenience.</h6>
+                </div>
+               <div class="col-md-4 services">
+                    <img src="7.jpg" class="service-img">
+                    <h4>Custom Arrangements</h4>
+                    <h6>Allow customers to customize their flower arrangements by selecting specific flowers, colors, and styles.</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

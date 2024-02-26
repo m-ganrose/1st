@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gazellian</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script>
+        function confirmLogout() {
+            // Display a confirmation dialog
+            var logout = confirm("Are you sure you want to log out?");
+            
+            // If user clicks OK, proceed with log-out
+            if (logout) {
+                window.location.href = "index.html"; 
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#"><img src="logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="homepage.html" target ="_self">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" target ="_self">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html" target ="_self" >Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html" target ="_self" >Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" onclick="confirmLogout()" target ="_self" >Log-out</a>
+                </li>
+            </ul>
+
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
+        </div>
+    </nav>
+
+
+    <section id="contact" >
+        <div class="container">
+            <h1 class= "title text-center">Contact Us</h1>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <address>
+                        <strong>Address:</strong><br>
+                        Ampayon, Butuan City<br>
+                        Agusan del Norte<br>
+                        Philippines
+                    </address>
+                    <p>
+                        <strong>Email:</strong> <a href="gazelliantech@gmail.com">maestradomegan5gmail.com</a><br>
+                        <strong>Phone:</strong> 09179298651
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

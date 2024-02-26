@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gazellian</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script>
+        function confirmLogout() {
+            // Display a confirmation dialog
+            var logout = confirm("Are you sure you want to log out?");
+            
+            // If user clicks OK, proceed with log-out
+            if (logout) {
+                window.location.href = "index.html"; 
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#"><img src="logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="homepage.html" target ="_self">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" target ="_self">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html" target ="_self" >Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html" target ="_self" >Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" onclick="confirmLogout()" target ="_self" >Log-out</a>
+                </li>
+            </ul>
+
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
+        </div>
+    </nav>
+
+
+
+    <section id="services2">
+        <div class="container text-center">
+            <h1 class="title">WHY CHOOSE US?</h1>
+            <p>At Gazellian, our journey began with a simple love for flowers. We realized that the power of a single bloom can brighten a room, lift a spirit, and express emotions words often cannot. With this in mind, we embarked on a mission to make these moments more accessible to everyone, no matter where they are.</p>
+            <div class="row">
+                <div class="col-lg-12 services">
+                    <h4>Our Mission</h4>
+                    <p>At Gazellian Flower Shop, our mission is to spread joy and express emotions through the beauty of flowers.
+                         We are dedicated to providing our customers with the highest quality floral arrangements, 
+                         tailored to each occasion and sentiment. With a commitment to creativity, freshness, and personalized service, 
+                         we strive to make every interaction a memorable and delightful experience. Our aim is not just to sell flowers, 
+                         but to create lasting connections and moments of happiness for our customers and their loved ones</p>
+                </div>
+                <div class="col-lg-12 services">
+                    <h4>Core Values</h4>
+                    <p>Creativity and Quality              </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+</body>
+</html>
